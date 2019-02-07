@@ -12,7 +12,10 @@ class Point :
 	def __repr__(self):
 		return "({} , {})".format(self.x,self.y)
 
-	def add( self, a, b):
-		return Point(a.x+b.x,a.y+b.y)
+	def add( self, a):
+		return Point(a.x+self.x,a.y+self.y)
+
+	def sub(self, a,b):
+		return Point(a.x-b.x,a.y-b.y)
 
 		
